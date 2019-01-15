@@ -12,8 +12,8 @@
             "environment": [],
             "name": "simple-app",
             "image": "amazon/amazon-ecs-sample",
-            "cpu": 512,
-            "memory": 500,
+            "cpu": 256,
+            "memory": 256,
             "portMappings": [
                 {
                     "hostPort": 80,
@@ -32,8 +32,8 @@
         {
             "name": "busybox",
             "image": "busybox",
-            "cpu": 512,
-            "memory": 500,
+            "cpu": 256,
+            "memory": 256,
             "volumesFrom": [
             {
               "sourceContainer": "simple-app"
